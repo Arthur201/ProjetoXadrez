@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Tabuleiro;
 
 namespace projeto_final
 {
@@ -10,6 +7,12 @@ namespace projeto_final
     {
         static void Main(string[] args)
         {
+            posicao p;
+
+            Console.WriteLine("Posicao:"+p);
+
+            Console.ReadLine(); 
+
         }
     }
 }

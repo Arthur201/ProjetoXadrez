@@ -1,5 +1,5 @@
 ﻿using System;
-using Tabuleiro;
+using tabuleiro;
 
 namespace projeto_final
 {
@@ -7,9 +7,7 @@ namespace projeto_final
     {
         static void Main(string[] args)
         {
-            posicao p;
-
-            Console.WriteLine("Posicao:"+p);
+            Tabuleiro tab = new Tabuleiro(8, 8);
 
             Console.ReadLine(); 
 

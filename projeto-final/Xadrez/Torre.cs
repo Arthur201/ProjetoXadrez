@@ -33,10 +33,10 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.linha = pos.linha - 1;
             }
             // abaixo
-            pos.definirValores(posicao.linha - 1, posicao.coluna);
+            pos.definirValores(posicao.linha + 1, posicao.coluna);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
@@ -44,7 +44,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.linha = pos.linha + 1;
             }
             // direita
             pos.definirValores(posicao.linha, posicao.coluna + 1);
@@ -66,7 +66,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.coluna = pos.coluna - 1;
             }
             return mat;
         }

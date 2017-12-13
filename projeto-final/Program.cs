@@ -44,6 +44,8 @@ namespace projeto_final
                     }
 
                  }
+                Console.Clear();
+                Tela.imprimirPartida(partida);
 
 
             }

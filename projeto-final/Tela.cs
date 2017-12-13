@@ -14,12 +14,21 @@ namespace projeto_final
             imprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
-            Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
-            Console.WriteLine();
-            if (partida.xeque)
+            if (!partida.terminada)
             {
-                Console.WriteLine("VOCÊ TA EM XEQUE SEU AMEBA !!!!!!!!");
+
+                Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
                 Console.WriteLine();
+                if (partida.xeque)
+                {
+                    Console.WriteLine("VOCÊ TA EM XEQUE SEU AMEBA !!!!!!!!");
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("XEQUEMATE... EAAASYY");
+                Console.WriteLine("Vencedor : " + partida.jogadorAtual);
             }
         }
 

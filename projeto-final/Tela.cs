@@ -15,6 +15,12 @@ namespace projeto_final
             Console.WriteLine();
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            Console.WriteLine();
+            if (partida.xeque)
+            {
+                Console.WriteLine("VOCÊ TA EM XEQUE SEU AMEBA !!!!!!!!");
+                Console.WriteLine();
+            }
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
@@ -98,13 +104,13 @@ namespace projeto_final
             {
                 if (peca.cor == Cor.branca)
                 {
-                    Console.Write(peca);
+                    Console.Write(peca + " ");
                 }
                 else
                 {
                     ConsoleColor aux = Console.ForegroundColor;
                     Console.ForegroundColor = ConsoleColor.Yellow;
-                    Console.Write(peca);
+                    Console.Write(peca + " ");
                     Console.ForegroundColor = aux;
                 }
             }
